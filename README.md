@@ -7,6 +7,13 @@ can **fund the position from any chain or a credit card, track impermanent loss 
 and rebalance or exit — end to end.** It closes the full capital loop — **fund → manage → execute →
 exit** — across chains and fiat, with real, safety-gated execution (not just suggestions).
 
+## Demo
+
+The funding path is a real mainnet round trip (Solana → Polygon → Solana), best-rate routed and
+safety-gated:
+
+![Cross-chain funding round trip demo](./demo/roundtrip.gif)
+
 ## Why it's useful
 
 - **Analyze** — IL vs HODL (concentrated-liquidity value function), out-of-range + edge proximity,
@@ -63,6 +70,13 @@ install.sh
 - Solana → Polygon: [`5PRGrU7q…62J3Qk`](https://explorer.solana.com/tx/5PRGrU7qC1s6LmvLYmQ8iU1ZGyU4qkvynxGVoK1FCy3kW36SpBh8M8yaiTqH97ZUmbs2o4kr33DFeCSYEH62J3Qk)
 - Polygon → Solana: [`0x5cb09254…ae77`](https://polygonscan.com/tx/0x5cb09254977140845386432ae6b89416f3883c35a9b3254a36a2a9979642ae77)
 
+## About HFSP Labs
+
+Built by **HFSP Labs** — we build autonomous, agent-native infrastructure on Solana, including
+**Clawdrop** (per-user Solana AI agents that run 24/7 on the SendAI Agent Kit) and a suite of
+**x402** payment skills. This skill is part of that work: keeping an agent's liquidity positions
+funded and healthy across chains and rails.
+
 ## License
 
-MIT.
+MIT — ready to be merged or submoduled into the Solana AI Kit.
