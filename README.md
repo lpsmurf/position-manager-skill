@@ -41,7 +41,7 @@ npm run exit-fiat   50 USD                    # cash a position's proceeds out t
 | Capability | What it does |
 |-----------|-------------|
 | `analyze` | IL vs HODL (concentrated-liquidity value fn), out-of-range + edge proximity, **EV rebalance verdict** (`hold`/`rebalance`/`exit`) netting fees vs IL + gas + slippage. Pure, read-only. |
-| `fund-bridge` / `exit-bridge` | Best-rate cross-chain funding/exit via the bundled aggregator (**CCTP · Mayan · deBridge · Allbridge**) |
+| `fund-bridge` / `exit-bridge` | Best-rate cross-chain funding/exit via the bundled aggregator (**CCTP · Mayan · deBridge · Allbridge**) — **works both ways** (EVM → Solana to fund, Solana → EVM to exit), mainnet-proven |
 | `fund-fiat` / `exit-fiat` | Onramper fiat on/off-ramp *(sandbox today)* |
 | safety + `rpc-health` | Allowlist, caps, swap-slippage protection, re-quote guard, RPC failover across 6 chains |
 
